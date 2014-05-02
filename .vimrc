@@ -1,5 +1,7 @@
 "非兼容模式
 set nocp
+"不显示当前行下划线
+set nocursorline
 "底部标尺
 set ru
 "搜索时高亮显示结果
@@ -13,7 +15,7 @@ set wildmenu
 "文件默认编码
 set enc=utf-8
 "文件保存时使用的编码
-"fileencoding=utf-8
+set fileencoding=utf-8
 "打开文件进行解码的猜测列表，优先以utf-8打开
 set fileencodings=utf-8,gbk
 "文件默认格式unix
@@ -37,7 +39,7 @@ set comments=sl:/*,mb:*,ex:*/
 "设置字典
 autocmd FileType javascript set dictionary=~/.vim/dict/javascript.dict
 "默认配色为darkblue
-color darkbluefix
+"color darkbluefix
 "显示标签栏 0: 从不 1: 大于1个时显示 2: 总是
 set showtabline=2
 
@@ -219,7 +221,7 @@ call VimInitAll()
 set background=dark
 set cursorline
 let g:solarized_termtrans = 1
-colorscheme solarized
+"colorscheme solarized
 " fix folded line color
 hi Folded   guifg=#808080 guibg=#000040 ctermfg=lightblue ctermbg=black cterm=bold term=bold
 " fix tabline
@@ -271,6 +273,3 @@ let g:defaultExplorer = 0
 nmap <C-W><C-F> :FirstExplorerWindow<CR>
 nmap <C-W><C-B> :BottomExplorerWindow<CR>
 nmap <silent> <leader>wm :WMToggle<CR> 
-
-
-
