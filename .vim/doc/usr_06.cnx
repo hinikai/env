@@ -1,4 +1,4 @@
-*usr_06.txt*	For Vim version 7.2.  最后修改：2006年5月
+*usr_06.txt*	For Vim version 7.0.  最后修改：2006年5月
 
 		    Vim 用户手册 - Bram Moolenaar
 		(译者：Nek_in http://vimcdoc.sf.net)
@@ -58,7 +58,7 @@
 <
 	或者 (基于你用的控制台终端) >
 
-		TERM=xterm-color; export TERM
+		TERM=xterm-color; export TREM
 <
 	终端名必须与你使用的终端一致。如果这还是不行，参考一下 |xterm-color|，
 	那里介绍了一些使 Vim 显示彩色的方法 (不仅是 xterm)。

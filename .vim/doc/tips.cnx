@@ -1,4 +1,4 @@
-*tips.txt*	For Vim version 7.2.  最近更新: 2006年12月
+*tips.txt*	For Vim version 7.0.  最近更新: 2006年7月
 
 
 		     Vim 参考手册    作者：Bram Moolenaar
@@ -134,7 +134,7 @@ Vim 里面有不少功能可以帮助你们编辑 C 程序。以下是一个概�
 的控制序列应该执行的位置。
 
 把你的 xterm termcap 条目 (在 /etc/termcap 中) 和 xterm terminfo 条目 (用
-"infocmp -C xterm" 得到) 比较一下。两者应该都会有与下面类似的条目： >
+/usr/5bin/infocmp -C xterm 得到) 比较一下。两者应该都会有与下面类似的条目： >
 	:te=\E[2J\E[?47l\E8:ti=\E7\E[?47h:
 
 附：如果你发现了任何差异，那么最好让某人 (或许是你的系统管理员) 彻底地检查一下
@@ -363,9 +363,9 @@ $VIMRUNTIME 设置成存放 Vim 文件的目录。参见： |$VIMRUNTIME|。
 
 请看用户手册的第 |23.4| 节。
 
-如果你用一些专门的扩展名来命名二进制文件 (诸如 exe，bin 等等)，你会发现以下在
-<.vimrc> 文件中使用的一些命令在自动处理这些文件时非常有用。你可以用你希望编辑
-的文件扩展名 (用逗号分隔) 替换以下的 "*.bin"： >
+如果你用一个专门的扩展名用来命令二进制文件 (诸如 exe，bin 等等)，你们会发现以
+下在 <.vimrc> 文件中使用的一些命令在自动处理这些文件时非常有用。你可以用你希望
+编辑的文件扩展名 (用逗号分隔) 替换以下的 "*.bin"： >
 
 	" vim -b : edit binary using xxd-format!
 	augroup Binary

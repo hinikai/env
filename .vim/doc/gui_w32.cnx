@@ -1,4 +1,4 @@
-*gui_w32.txt*	For Vim version 7.2.  最后更新: 2008年4月
+*gui_w32.txt*	For Vim version 7.0.  最后更新: 2006年7月20日
 
 
 		  VIM 参 考 手 册    作者：Bram Moolenaar
@@ -53,14 +53,6 @@ Win32 GUI 版本里有一个额外的菜单选项 "编辑/选择字体"，它能
 								*gui-w32s*
 gvim.exe 还有一个特别的版本，可以在 Windows 3.1 或 3.11 的 Win32s 子系统运行。
 参见 |win32s|。
-
-
-插件方式使用 Vim					*gui-w32-windowid*
-
-gvim 正常启动时，建立它自己的顶层窗口。如果传给 Vim 命令行选项 |--windowid| 和
-一个十进制或十六进制的参数，Vim 会建立窗口号为给定 ID 的窗口的子窗口。这样，
-Vim 就可以作为另一个应用的插件。这实际上是一个程序员接口，必须要有配套的应用来
-正确启动 Vim 才行。
 
 ==============================================================================
 2. 设定 Vim 为默认的文本编辑器				*vim-default-editor*
@@ -231,8 +223,7 @@ Windows 有一个剪贴板，你可以把文本从别的程序 "剪" 下来，�
 
 这样一来 CTRL-C 就变成 "复制" 命令了，无法用作中止操作命令。改用 CTRL-Break。
 
-CTRL-Z 用于撤销。这意味着你无法用此快捷键挂起 Vim，可用 |:suspend| 代替 (如果
-支持的话)。
+CTRL-Z 用于撤销。这意味着你无法挂起 Vim。
 
 						*CTRL-V-alternative* *CTRL-Q*
 因为 CTRL-V 被用做 "粘贴"，所以你不能用它来启动 "可视列块" 的选择模式，不过可
@@ -440,8 +431,6 @@ Alt 键有关的映射。另一个办法是：设置 'winaltkeys' 选项为 "men
 	:map <C-n> :simalt ~n<CR>
 把 CTRL-N 映射成 Alt-Space + N。也就是打开窗口的系统菜单，然后按 N，最小化 Vim
 窗口。
-
-备注 键映射取决于你使用的语言。
 
 						*intellimouse-wheel-problems*
 用智能鼠 (Intellimouse) 的滑轮会引起 Vim 不能接收输入。到：

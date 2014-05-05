@@ -1,4 +1,4 @@
-*help.txt*	For Vim version 7.2.  最近更新：2008年8月
+*help.txt*	For Vim version 7.0.  最近更新：2006年6月
 
 			VIM - 主帮助文件
                                                                          k
@@ -57,7 +57,7 @@ VIM 代表 Vi IMproved。VIM 主要由 Bram Moolenaar 编写，但没有许多�
 |usr_11.txt|  从崩溃中恢复
 |usr_12.txt|  小窍门
 
-高效地编辑 ~
+高效的编辑 ~
 |usr_20.txt|  快速键入命令行
 |usr_21.txt|  离开和回来
 |usr_22.txt|  寻找要编辑的文件
@@ -84,7 +84,7 @@ VIM 代表 Vi IMproved。VIM 主要由 Bram Moolenaar 编写，但没有许多�
 |usr_90.txt|  安装 Vim
 
 
-参考手册：这些文件详细地解释 Vim 的每个细节。			*reference_toc*
+参考手册：这些文件详细的解释 Vim 的每个细节。			*reference_toc*
 
 一般主题 ~
 |intro.txt|	对 Vim 的一般介绍；帮助文件中所使用的符号
@@ -125,7 +125,7 @@ VIM 代表 Vi IMproved。VIM 主要由 Bram Moolenaar 编写，但没有许多�
 |tabpage.txt|	使用多个标签页的命令
 |syntax.txt|	语法高亮
 |spell.txt|	拼写检查
-|diff.txt|	编辑同一文本的两到四个版本
+|diff.txt|	编辑同一文本的两到三个版本
 |autocmd.txt|	当事件发生时自动执行命令
 |filetype.txt|	对某一类型文件的专有设定
 |eval.txt|	表达式求值，条件执行命令
@@ -135,14 +135,13 @@ VIM 代表 Vi IMproved。VIM 主要由 Bram Moolenaar 编写，但没有许多�
 |print.txt|	打印
 |remote.txt|	将 Vim 用作服务器/客户端
 |term.txt|	使用不同终端和鼠标
-|digraph.txt|	可用的二合字母清单
+|digraph.txt|	可用的二元字母清单
 |mbyte.txt|	多字节文本支持
 |mlang.txt|	非英语语言支持
 |arabic.txt|	阿拉伯语支持及编辑
 |farsi.txt|	Farsi (波斯语) 编辑
 |hebrew.txt|	希伯来语支持及编辑
 |russian.txt|	俄罗斯语支持及编辑
-|ft_ada.txt|	Ada (编程语言) 支持
 |hangulin.txt|	Hangul (韩语) 输入模式
 |rileft.txt|	从右向左的编辑模式
 
@@ -189,13 +188,11 @@ GUI ~
 |os_win32.txt|	MS-Windows 95/98/NT
 					*standard-plugin-list*
 标准插件 ~
-|pi_getscript.txt| 下载 Vim 脚本的最新版本
-|pi_gzip.txt|	   读写压缩过的文件
-|pi_netrw.txt|	   通过网络读写文件
-|pi_paren.txt|	   高亮匹配括号
-|pi_tar.txt|	   Tar 文件探索器
-|pi_vimball.txt|   创建自安装的 Vim 脚本
-|pi_zip.txt|	   Zip 归档探索器
+|pi_gzip.txt|	读写压缩过的文件
+|pi_netrw.txt|	通过网络读写文件
+|pi_paren.txt|	高亮匹配括号
+|pi_tar.txt|	Tar 文件探索器
+|pi_zip.txt|	Zip 归档探索器
 
 本地附加文档
 |local-additions|	请查阅英文文档

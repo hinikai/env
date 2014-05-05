@@ -1,4 +1,4 @@
-*version5.txt*  For Vim version 7.2.  最近更新: 2008年7月
+*version5.txt*  For Vim version 7.0.  最近更新: 2006年4月
 
 
 		  VIM 参考手册    by Bram Moolenaar
@@ -1732,7 +1732,7 @@ For ":syntax keyword" the "transparent" option did work, although not
 mentioned in the help.  But synID() returned wrong name.
 
 "gqG" in a file with one-word-per-line (e.g. a dictionary) was very slow and
-not interruptible.
+not interruptable.
 
 "gq" operator inserted screen lines in the wrong situation.  Now screen
 lines are inserted or deleted when this speeds up displaying.
@@ -1859,7 +1859,7 @@ because the compare with other tags was wrong.  E.g., when "mnuFileSave" was
 already there, "mnuFile" would be skipped. (Negri)
 
 When scrolling up/down, a syntax item with "keepend" didn't work properly.
-Now the flags are also stored for the syntax state at the start of each line.
+Now the flags are also stored for the syntax state a the start of each line.
 
 When 'ic' was changed while 'hlsearch' is on, there was no redraw to show the
 effect.
@@ -2659,7 +2659,7 @@ backspace key.  "\<Del>" produces 0x7f.
 
 The shell syntax didn't contain a "syn sync maxlines" setting.  In a long file
 without recognizable items, syncing took so long it looked like Vim hangs.
-Added a maxlines setting, and made syncing interruptible.
+Added a maxlines setting, and made syncing interruptable.
 
 The "gs" command didn't flush output before waiting.
 
@@ -2855,7 +2855,7 @@ character in the line, instead of just after it.
 
 5.2.7: Win32 GUI: scrollbar was one pixel too big.
 
-5.2.8: Completion of "PopUp" menu showed the derivatives "PopUpc", "PopUPi",
+5.2.8: Completion of "PopUp" menu showed the derivates "PopUpc", "PopUPi",
 etc.  ":menu" also showed these.
 
 5.2.9: When using two input() functions on a row, the prompt would not be
@@ -7238,7 +7238,7 @@ Fixed compiling under NeXT. (Jeroen C.M. Goudswaard)
 
 optwin.vim gave an error when used in Vi compatible mode ('cpo' contains 'C').
 
-Tcl interpreter: "buffer" command didn't check for presence of an argument.
+Tcl interpreter: "buffer" command didn't check for presense of an argument.
 (Dave Bodenstab)
 
 dosinst.c: Added checks for too long file name.

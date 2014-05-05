@@ -1,4 +1,4 @@
-*mbyte.txt*     For Vim version 7.2.  最近更新：2008年6月
+*mbyte.txt*     For Vim version 7.0.  最近更新：2006年7月
 
 
                 VIM 参考手册	  by Bram Moolenaar et al.
@@ -310,8 +310,6 @@ u   unicode	同 ucs-2
 u   ucs2be	同 ucs-2 (big endian)
 u   ucs-2be	同 ucs-2 (big endian)
 u   ucs-4be	同 ucs-4 (big endian)
-u   utf-32	同 ucs-4
-u   utf-32le	同 ucs-4le
     default     代表 'encoding' 的默认值，取决于环境变量
 
 对於 UCS 编码，字节次序会影响编码结果。这比较麻烦。因此尽可能使用 UTF-8。默认
@@ -354,8 +352,7 @@ iconv() 的功能影响。因为这取决于你所用的系统，这里无法给
 			'encoding' 设成 "utf-8" 可以解决)。
  8bit      2byte	MS-Windows：系统上安装的所有代码页都可以转换，同时，你
  			只能输入 8bit 字符，在其它的系统上都不行。
- 8bit	   Unicode	可以转换，但是你只能直接输入 8bit 字符 (其它字符可以通
- 			过二合字母、键盘映射表等方式输入)，在终端下你只能看到
+ 8bit	   Unicode	可以转换，但是你只能输入 8bit 字符，在终端下你只能看到
 			8bit 字符，GUI 上可以看到 'guifont' 支持的所有字符。
 			
  2byte	    8bit	可以转换，但是输入非 ASCII 字符可能会有问题。
@@ -850,7 +847,7 @@ Vim 在普通状态下几乎不需要 IME，即使是在编辑多字节文本也
     对 Global IME 的支持是实验性的。
 
 备注: 要使 IME 工作，你需要将输入语言的 locale 加到你的系统里。具体如何操作根
-据 Windows 的版本不同而不同。比如，在我的 Windows 2000 机器里:
+据 Windows 的版本不同而不同。比如，在我的 W2P 机器里:
 1. 控制面板
 2. 区域设置
 3. 语言与输入法 (译者注: 此处似乎不同版本不同。但大致可以参考)

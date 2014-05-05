@@ -1,4 +1,4 @@
-*usr_toc.txt*	For Vim version 7.2.  最近更新: 2006年7月
+*usr_toc.txt*	For Vim version 7.0.  最近更新: 2006年7月
 
 		     VIM USER MANUAL - by Bram Moolenaar
 
@@ -213,7 +213,7 @@
 		|24.6|	插入一个寄存器内容
 		|24.7|	缩写
 		|24.8|	插入特殊字符
-		|24.9|	二合字母
+		|24.9|	二元字母
 		|24.10|	普通模式命令
 
 |usr_25.txt|  编辑带格式的文本
