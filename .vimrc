@@ -158,3 +158,4 @@ set termencoding=utf-8
 "开发时候编译
 map <F5> <Esc>:!cd ~/public_html/ui; make dev_pc<CR>
 map <F6> <Esc>:!cd ~/work/taxi/webapp; sh deploy.sh<CR>
+
