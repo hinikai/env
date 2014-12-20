@@ -104,8 +104,13 @@ set autoindent
 "打开语法高亮
 syntax on
 syntax enable
+"设置字典
+autocmd FileType javascript set dictionary=~/.vim/dict/javascript.dict
+set background=dark
+set t_Co=256
+colorscheme solarized
 "默认配色为darkblue
-color desert
+"colorscheme molokai
 "colorscheme evening
 "color candy 
 "显示标签栏 0: 从不 1: 大于1个时显示 2: 总是
@@ -115,7 +120,7 @@ set showtabline=1
 "gvim下设置无菜单栏工具栏
 set go= "无菜单、工具栏
 "字体设置
-set guifont=monaco:h12
+set guifont=monaco:h17
 "tab键自动补全
 function! CleverTab()
     if strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
