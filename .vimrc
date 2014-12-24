@@ -147,10 +147,10 @@ nmap <C-M> :cn<CR>
 "NERDTree shortkey
 map <F2> :NERDTreeToggle<CR>
 "ctags设置
-"set tags=~/public_html/api14/src/scripts/tags
+"set tags=~/work/website/tags
 "Tlist配置
 map <F3> :Tlist<CR>
-let Tlist_Ctags_Cmd = '/usr/bin/ctags'
+let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
 "let Tlist_File_Fold_Auto_Close=1
 "let Tlist_Auto_Open=1
 " 不同时显示多个文件的tag，只显示当前文件的

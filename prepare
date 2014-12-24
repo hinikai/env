@@ -26,6 +26,14 @@ else
     echo 'OK'
 fi
 
+echo -n 'checking .ctags '
+if [ ! -f ~/.ctags ]; then
+    ln -s $WORKPATH/.ctags ~/.ctags
+    echo 'LINKED'
+else
+    echo 'OK'
+fi
+
 echo 'DONE'
 
 
