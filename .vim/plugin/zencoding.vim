@@ -18,11 +18,11 @@
 "   "_" is a cursor position. and type "<c-y>," (Ctrl+y and Comma)
 "   NOTE: Don't worry about key map. you can change it easily.
 "      +-------------------------------------
-"      | <!DOCTYPE HTML>
-"      | <html lang="en">
+"      | <!DOCTYPE html>
+"      | <html>
 "      | <head>
-"      |     <title></title>
 "      |     <meta charset="UTF-8">
+"      |     <title></title>
 "      | </head>
 "      | <body>
 "      |      _
