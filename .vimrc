@@ -108,9 +108,9 @@ syntax enable
 autocmd FileType javascript set dictionary=~/.vim/dict/javascript.dict
 set background=dark
 set t_Co=256
-colorscheme solarized
+"colorscheme solarized
 "默认配色为darkblue
-"colorscheme molokai
+colorscheme molokai
 "colorscheme evening
 "color candy 
 "显示标签栏 0: 从不 1: 大于1个时显示 2: 总是
@@ -146,6 +146,7 @@ nmap <C-P> :tabprevious<CR>
 nmap <C-M> :cn<CR>
 "NERDTree shortkey
 map <F2> :NERDTreeToggle<CR>
+inoremap jj <ESC>
 "ctags设置
 "set tags=~/work/website/tags
 "Tlist配置
@@ -160,7 +161,8 @@ let Tlist_Exit_OnlyWindow=1
 let g:tlist_javascript_settings='javascript;f:function;c:class;o:object;m:method;s:string;a:array;n:constant'
 "终端显示
 set termencoding=utf-8
+
+"set list
 "开发时候编译
-map <F5> <Esc>:!cd ~/public_html/ui; make dev_pc<CR>
-map <F6> <Esc>:!cd ~/work/taxi/webapp; sh deploy.sh<CR>
+map <F5> <Esc>:!cd ~/work/mapv; git add .; git commit -m 'update'; git push<CR>
 
