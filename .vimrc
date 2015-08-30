@@ -1,12 +1,14 @@
-set nocompatible	" Use Vim defaults (much better!)
-set bs=indent,eol,start		" allow backspacing over everything in insert mode
+" allow backspacing over everything in insert mode
+set bs=indent,eol,start		
 "set ai			" always set autoindenting on
 "set backup		" keep a backup file
 set viminfo='20,\"50	" read/write a .viminfo file, don't store more
 			" than 50 lines of registers
 "keep 50 lines of command line history
 set history=50		
-set ruler		" show the cursor position all the time
+
+" show the cursor position all the time
+set ruler		
 
 let mapleader = ","
 "非兼容模式
