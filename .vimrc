@@ -59,6 +59,7 @@ set t_Co=256
 colorscheme molokai
 "colorscheme evening
 "color candy 
+
 "显示标签栏 0: 从不 1: 大于1个时显示 2: 总是
 set showtabline=1
 "使查找替换忽略大小写的选项
