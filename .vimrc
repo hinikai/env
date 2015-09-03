@@ -111,5 +111,5 @@ set termencoding=utf-8
 
 "set list
 "开发时候编译
-map <F5> <Esc>:!cd ~/work/mapv; git add .; git commit -m 'update'; git push<CR>
+"map <F5> <Esc>:!cd ~/work/mapv; git add .; git commit -m 'update'; git push<CR>
 
