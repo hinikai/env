@@ -16,9 +16,9 @@ set nocompatible
 "底部标尺
 set ru  
 "搜索时高亮显示结果
-set hls
+set hlsearch
 "输入搜索命令时，显示目前输入的模式的匹配位置
-set is
+set incsearch
 "显示行号
 set number
 "帮助文档语言 en英文 cn中文
@@ -91,6 +91,7 @@ nmap <C-N> :tabnext<CR>
 nmap <C-P> :tabprevious<CR>
 "映射vimgrep匹配的cn,cp
 nmap <C-M> :cn<CR>
+nmap <C-B> :cp<CR>
 "NERDTree shortkey
 map <F2> :NERDTreeToggle<CR>
 inoremap jj <ESC>
