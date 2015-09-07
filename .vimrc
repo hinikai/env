@@ -91,7 +91,7 @@ nmap <C-N> :tabnext<CR>
 nmap <C-P> :tabprevious<CR>
 "映射vimgrep匹配的cn,cp
 nmap <C-M> :cn<CR>
-nmap <C-B> :cp<CR>
+"nmap <C-B> :cp<CR>
 "NERDTree shortkey
 map <F2> :NERDTreeToggle<CR>
 inoremap jj <ESC>
