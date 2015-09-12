@@ -56,7 +56,7 @@ set background=dark
 set t_Co=256
 "colorscheme solarized
 "默认配色为darkblue
-colorscheme molokai
+ colorscheme molokai
 "colorscheme evening
 "color candy 
 
@@ -96,7 +96,7 @@ nmap <C-M> :cn<CR>
 map <F2> :NERDTreeToggle<CR>
 inoremap jj <ESC>
 "ctags设置
-"set tags=~/work/website/tags
+set tags=~/work/mapv/src/tags
 "Tlist配置
 map <F3> :Tlist<CR>
 let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
@@ -110,7 +110,7 @@ let g:tlist_javascript_settings='javascript;f:function;c:class;o:object;m:method
 "终端显示
 set termencoding=utf-8
 
-"set list
+set list
 "开发时候编译
 "map <F5> <Esc>:!cd ~/work/mapv; git add .; git commit -m 'update'; git push<CR>
 
