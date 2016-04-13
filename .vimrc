@@ -110,7 +110,7 @@ let g:tlist_javascript_settings='javascript;f:function;c:class;o:object;m:method
 "终端显示
 set termencoding=utf-8
 
-set list
+"set list
 "开发时候编译
 "map <F5> <Esc>:!cd ~/work/mapv; git add .; git commit -m 'update'; git push<CR>
 
