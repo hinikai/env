@@ -7,5 +7,3 @@
 *.bin
 *.config
 .DS_Store
-.vim/bundle
-.vim/.netrwhist

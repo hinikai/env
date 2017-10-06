@@ -21,6 +21,13 @@ set hlsearch
 set incsearch
 "显示行号
 set number
+"使用:e命令的时候 可选项预览
+set wildmenu
+set showcmd
+"highlight current column
+set cursorcolumn
+"highlight current line
+"set cursorline
 "帮助文档语言 en英文 cn中文
 set helplang=cn
 "使用:e命令的时候 可选项预览
@@ -54,9 +61,9 @@ syntax enable
 autocmd FileType javascript set dictionary=~/.vim/dict/javascript.dict
 set background=dark
 set t_Co=256
-"colorscheme solarized
+colorscheme solarized
 "默认配色为darkblue
- colorscheme molokai
+"colorscheme molokai
 "colorscheme evening
 "color candy 
 
@@ -92,8 +99,6 @@ nmap <C-P> :tabprevious<CR>
 "映射vimgrep匹配的cn,cp
 nmap <C-M> :cn<CR>
 "nmap <C-B> :cp<CR>
-"NERDTree shortkey
-map <F2> :NERDTreeToggle<CR>
 inoremap jj <ESC>
 "ctags设置
 set tags=~/work/mapv/src/tags
@@ -113,4 +118,88 @@ set termencoding=utf-8
 "set list
 "开发时候编译
 "map <F5> <Esc>:!cd ~/work/mapv; git add .; git commit -m 'update'; git push<CR>
+
+
+"""""""""""""""""""""""""""""""""""
+"vundle plugin
+"""""""""""""""""""""""""""""""""""
+set	nocompatible
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+
+"My Bundle here:
+
+Plugin 'The-NERD-tree'
+"NERDTree shortkey
+map <F2> :NERDTreeToggle<CR>
+
+"Plugin 'majutsushi/tagbar'
+"nmap <silent> <F4> :TagbarToggle<CR>
+"let g:tagbar_ctags_bin = '/usr/local/bin/ctags'
+"let g:tagbar_width = 30
+
+"Color Scheme
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'sjl/badwolf'
+
+" vim comment plugin
+Plugin 'scrooloose/nerdcommenter'
+let NERDSpaceDelims=1
+let NERDRemoveExtraSpaces=1
+
+Plugin 'luochen1990/rainbow'
+let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
+let g:rainbow_conf = {
+\   'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],
+\   'ctermfgs': ['lightblue', 'lightyellow', 'lightcyan', 'lightmagenta'],
+\   'operators': '_,_',
+\   'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'],
+\   'separately': {
+\       '*': {},
+\       'tex': {
+\           'parentheses': ['start=/(/ end=/)/', 'start=/\[/ end=/\]/'],
+\       },
+\       'lisp': {
+\           'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick', 'darkorchid3'],
+\       },
+\       'vim': {
+\           'parentheses': ['start=/(/ end=/)/', 'start=/\[/ end=/\]/', 'start=/{/ end=/}/ fold', 'start=/(/ end=/)/ containedin=vimFuncBody', 'start=/\[/ end=/\]/ containedin=vimFuncBody', 'start=/{/ end=/}/ fold containedin=vimFuncBody'],
+\       },
+\       'html': {
+\           'parentheses': ['start=/\v\<((area|base|br|col|embed|hr|img|input|keygen|link|menuitem|meta|param|source|track|wbr)[ >])@!\z([-_:a-zA-Z0-9]+)(\s+[-_:a-zA-Z0-9]+(\=("[^"]*"|'."'".'[^'."'".']*'."'".'|[^ '."'".'"><=`]*))?)*\>/ end=#</\z1># fold'],
+\       },
+\       'css': 0,
+\   }
+\}
+
+" vim-ariline theme
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+" let g:airline_theme='molokai'
+let g:airline_theme='solarized'
+
+""""""""""""""""""""""""""""""
+" airline
+""""""""""""""""""""""""""""""
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#branch#enabled     = 1
+let g:airline#extensions#syntastic#enabled  = 1
+" vim-powerline symbols
+let g:airline_left_sep          = '⮀'
+let g:airline_left_alt_sep      = '⮁'
+let g:airline_right_sep         = '⮂'
+let g:airline_right_alt_sep     = '⮃'
+let g:airline_symbols.branch     = '⭠'
+let g:airline_symbols.readonly   = '⭤'
+
+let g:airline_symbols.linenr = '⭡'
+
+call vundle#end()
 
