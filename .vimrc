@@ -30,8 +30,6 @@ set cursorcolumn
 "set cursorline
 "帮助文档语言 en英文 cn中文
 set helplang=cn
-"使用:e命令的时候 可选项预览
-set wildmenu
 "文件默认编码
 set encoding=utf-8
 "文件保存时使用的编码
@@ -53,19 +51,13 @@ set autoindent
 "不换行
 "set nowrap
 "鼠标捕捉
-"set mouse=a
+set mouse=a
 "打开语法高亮
 syntax on
 syntax enable
 "设置字典
 autocmd FileType javascript set dictionary=~/.vim/dict/javascript.dict
-set background=dark
-set t_Co=256
-colorscheme solarized
-"默认配色为darkblue
-"colorscheme molokai
-"colorscheme evening
-"color candy 
+
 
 "显示标签栏 0: 从不 1: 大于1个时显示 2: 总是
 set showtabline=1
@@ -101,7 +93,7 @@ nmap <C-M> :cn<CR>
 "nmap <C-B> :cp<CR>
 inoremap jj <ESC>
 "ctags设置
-set tags=~/work/mapv/src/tags
+"set tags=~/work/mapv/src/tags
 "Tlist配置
 map <F3> :Tlist<CR>
 let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
@@ -118,7 +110,6 @@ set termencoding=utf-8
 "set list
 "开发时候编译
 "map <F5> <Esc>:!cd ~/work/mapv; git add .; git commit -m 'update'; git push<CR>
-
 
 """""""""""""""""""""""""""""""""""
 "vundle plugin
@@ -143,6 +134,7 @@ map <F2> :NERDTreeToggle<CR>
 
 "Color Scheme
 Plugin 'altercation/vim-colors-solarized'
+
 Plugin 'sjl/badwolf'
 
 " vim comment plugin
@@ -203,3 +195,8 @@ let g:airline_symbols.linenr = '⭡'
 
 call vundle#end()
 
+"Color Scheme
+set background=dark
+set t_Co=256
+colorscheme solarized
+let g:solarized_termcolors=256

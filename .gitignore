@@ -7,3 +7,4 @@
 *.bin
 *.config
 .DS_Store
+.netrwhist
