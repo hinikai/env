@@ -96,7 +96,7 @@ inoremap jj <ESC>
 "set tags=~/work/mapv/src/tags
 "Tlist配置
 map <F3> :Tlist<CR>
-let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
+let Tlist_Ctags_Cmd = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ctags'
 "let Tlist_File_Fold_Auto_Close=1
 "let Tlist_Auto_Open=1
 " 不同时显示多个文件的tag，只显示当前文件的
