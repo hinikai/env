@@ -34,6 +34,15 @@ else
     echo 'OK'
 fi
 
+echo -n 'checking .zshrc '
+if [ ! -f ~/.zshrc ]; then
+    ln -s $WORKPATH/.zshrc ~/.zshrc
+    echo 'LINKED'
+else
+    echo 'OK'
+fi
+
+
 echo 'DONE'
 
 

@@ -134,6 +134,7 @@ map <F2> :NERDTreeToggle<CR>
 
 "Color Scheme
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'flazz/vim-colorschemes'
 
 Plugin 'sjl/badwolf'
 
@@ -170,8 +171,8 @@ let g:rainbow_conf = {
 " vim-ariline theme
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-" let g:airline_theme='molokai'
-let g:airline_theme='solarized'
+let g:airline_theme='molokai'
+" let g:airline_theme='solarized'
 
 """"""""""""""""""""""""""""""
 " airline
@@ -198,5 +199,6 @@ call vundle#end()
 "Color Scheme
 set background=dark
 set t_Co=256
-colorscheme solarized
+" colorscheme solarized
+colorscheme Tomorrow-Night-Blue
 let g:solarized_termcolors=256
