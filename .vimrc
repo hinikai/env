@@ -199,6 +199,6 @@ call vundle#end()
 "Color Scheme
 set background=dark
 set t_Co=256
-" colorscheme solarized
-colorscheme Tomorrow-Night-Blue
+colorscheme solarized
+" colorscheme Tomorrow-Night-Blue
 let g:solarized_termcolors=256
