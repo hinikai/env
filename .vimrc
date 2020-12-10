@@ -202,3 +202,5 @@ set t_Co=256
 colorscheme solarized
 " colorscheme Tomorrow-Night-Blue
 let g:solarized_termcolors=256
+
+set redrawtime=10000
