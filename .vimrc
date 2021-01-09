@@ -136,14 +136,14 @@ map <F2> :NERDTreeToggle<CR>
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'flazz/vim-colorschemes'
 
-Plugin 'sjl/badwolf'
+"Plugin 'sjl/badwolf'
 
 " vim comment plugin
-Plugin 'scrooloose/nerdcommenter'
+" Plugin 'scrooloose/nerdcommenter'
 let NERDSpaceDelims=1
 let NERDRemoveExtraSpaces=1
 
-Plugin 'luochen1990/rainbow'
+" Plugin 'luochen1990/rainbow'
 let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 let g:rainbow_conf = {
 \   'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],
